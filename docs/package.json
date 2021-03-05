@@ -1,0 +1,13 @@
+{
+  "name": "knowledge",
+  "version": "0.1.0",
+  "private": true,
+  "description": "",
+  "scripts": {
+    "dev": "docsify serve ../docs --open",
+    "summary": "node ./read.js"
+  },
+  "devDependencies": {
+    "docsify": "^4.12.0"
+  }
+}
