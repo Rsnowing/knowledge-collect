@@ -4,7 +4,7 @@ diff的过程就是调用名为patch的函数，比较新旧节点，一边比�
 ## virtual DOM和真实DOM的区别？
 virtual DOM是将真实的DOM的数据抽取出来，以对象的形式模拟树形结构。比如dom是这样的：
 ```html
-<div>
+<div>`
   <p>123</p>
 </div>
 ```
