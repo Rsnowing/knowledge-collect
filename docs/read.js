@@ -5,7 +5,7 @@ const path = require('path')
 console.log(process.cwd());
 
 const CUR_PATH = path.join(process.cwd(), '.')
-const EXCLUDE = /assets|.git/ // 不想生成目录的文件夹名称
+const EXCLUDE = /assets|.git|node_modules/ // 不想生成目录的文件夹名称
 
 let summary = {} // 目录
 
