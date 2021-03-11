@@ -40,8 +40,10 @@ display: grid;
   grid-template-rows: 100px 100px 100px;
 }
 ```
+
 1. repeat()
-有时候，重复写同样的值非常麻烦，尤其网格很多时。这时，可以使用repeat()函数，简化重复的值。上面的代码用repeat()改写如下:
+
+  有时候，重复写同样的值非常麻烦，尤其网格很多时。这时，可以使用repeat()函数，简化重复的值。上面的代码用repeat()改写如下:
 
 ```css
 .container {
@@ -53,18 +55,22 @@ display: grid;
 2. auto-fill 关键字
 
 3. fr 关键字
-为了方便表示比例关系，网格布局提供了fr关键字（fraction 的缩写，意为"片段"）。如果两列的宽度分别为1fr和2fr，就表示后者是前者的两倍。
+
+  为了方便表示比例关系，网格布局提供了fr关键字（fraction 的缩写，意为"片段"）。如果两列的宽度分别为1fr和2fr，就表示后者是前者的两倍。
 
 4. minmax()
-minmax()函数产生一个长度范围，表示长度就在这个范围之中。它接受两个参数，分别为最小值和最大值。
+
+  minmax()函数产生一个长度范围，表示长度就在这个范围之中。它接受两个参数，分别为最小值和最大值。
 
 5. auto 关键字
-auto关键字表示由浏览器自己决定长度。
+
+  auto关键字表示由浏览器自己决定长度。
 ```css
 grid-template-columns: 100px auto 100px;
 ```
 
 6. 布局实例
+
 传统的十二网格布局，写起来也很容易。
 ```css
 grid-template-columns: repeat(12, 1fr);
@@ -231,3 +237,5 @@ place-self: <align-self> <justify-self>;
 ## 参考链接
 * [CSS Grid 网格布局教程 - 阮一峰的网络日志](https://www.ruanyifeng.com/blog/2019/03/grid-layout-tutorial.html)
 * [An awesome image grid - CSS Grid tutorial - Scrimba.com](https://scrimba.com/learn/cssgrid/an-awesome-image-grid-css-grid-tutorial-cBq3PsP)
+* [CSS 网格布局中的自动定位 - CSS（层叠样式表） | MDN](https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Grid_Layout/Auto-placement_in_CSS_Grid_Layout)
+* [Grid布局实践 - a Collection by hell on CodePen](https://codepen.io/collection/XQEeRx?cursor=ZD0wJm89MCZwPTEmdj00)
