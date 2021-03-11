@@ -10,6 +10,7 @@
 3. 代码重用 
   使多人并行开发成为可能
   面向接口开发（而不是面向实现开发）
+
 ### JS中的模块化方案
 主流的方案： esm、cjs
 * cjs: CommonJS, 支援 Node.js
@@ -20,13 +21,16 @@
 直接封装 amd、cjs、iife 三种方式并根据环境自动切换
 * amd: Asynchronous Module Definition，异步模块定义，以 RequireJS 为代表
 * system: SystemJS 的方式
+
 ### 语法区别
 #### esm
 * `import a from 'b'`
 * `export default c`
+
 #### cjs
 * `const a = require('b')`
 * `module.exports = c`
+
 #### iife
 ```js
 const result = (
@@ -36,6 +40,7 @@ const result = (
   }
 )(实参, ...);
 ```
+
 #### umd
 输出：
 ```js
@@ -65,10 +70,12 @@ const result = (
   * 三元 或 if else 做切换
   * 这个部分一般位于文件的头部或尾部
 2. 业务封装：将剩余的业务逻辑代码以类似 IIFE 的方式封装调用
+
 #### amd 
 不说了 老东西
 #### systemjs
 老东西
+
 
 ### 模块化方案
 对于浏览器原生，预编译工具和node，不同环境中的模块化方案也不同；由于浏览器环境不能够解析第三方依赖，所以浏览器环境需要把依赖也进行打包处理；不同环境下引用的文件也不相同，下面通过一个表格对比下
