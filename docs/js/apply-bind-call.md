@@ -2,7 +2,7 @@
 apply()、bind()、call() 都是用来重定义函数的this指向的 【this 永远指向最后调用它的那个对象】
 ## Function.prototype.apply()
 ### 定义
-apply接受两个参数，第一个参数是this的指向，第二个参数是函数接受的参数，以数组的形式传入，且当第一个参数为null、undefined的时候，默认指向window(在浏览器中)，使用apply方法改变this指向后原函数会立即执行，且此方法只是临时改变thi指向一次。
+apply接受两个参数，第一个参数是this的指向，第二个参数是函数接受的参数，以数组的形式传入，且当第一个参数为null、undefined的时候，默认指向window(在浏览器中)，使用apply方法改变this指向后原函数会立即执行，且此方法只是临时改变this指向一次。
 
 ### demo
 #### 1. 获取数组最大最小值
