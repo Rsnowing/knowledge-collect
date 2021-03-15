@@ -1,4 +1,4 @@
-#  Blob ArrayBuffer Buffer base64 File
+#  Blob, ArrayBuffer, Buffer, base64, File
 前端虽然不怎么需要处理文件，但是做上传文件这种需求的时候总会碰到。今天就来搞清楚他们之间的区别与联系吧！解决后顾之忧<br/>
 
 ## 概述

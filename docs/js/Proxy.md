@@ -126,9 +126,9 @@ app = new Proxy(app, {
 如果你不想其他开发者删除noDelete属性，不想其他开发者修改noChange属性，不想让其他开发者调用oldMethod,可以这样做：
 ```js
 let data = {
-  noDelete: 1234,
-  oldMethod: function() {},
-  noChange: '4783'
+    noDelete: 1234,
+    oldMethod: function() {},
+    noChange: '4783'
 }
 // 这是种很好的写法，把有含义的变量定义起来
 const NODELETE = ['noDelete']

@@ -12,6 +12,7 @@
 
   * [JavaScript模块](js/JavaScript模块.md)
   * [jsonp](js/jsonp.md)
+  * [js中各种类型的判断](js/js中各种类型的判断.md)
   * [js常用的文件类型](js/js常用的文件类型.md)
   * [Map](js/Map.md)
   * [post](js/post.md)
@@ -104,6 +105,7 @@
 
 * [vue](vue/extend和component.md)
   * [extend和component](vue/extend和component.md)
+  * [history与hash模式](vue/history与hash模式.md)
   * [mixin和插件](vue/mixin和插件.md)
   * [provide-inject](vue/provide-inject.md)
   * [router](vue/router.md)
@@ -187,10 +189,8 @@
   * [微信公众号开发技巧](好风凭借力-工具/微信公众号开发技巧.md)
   * [经常忘记的md语法](好风凭借力-工具/经常忘记的md语法.md)
 
-
   * [vue](框架总结/vue/基本使用相关.md)
     * [基本使用相关](框架总结/vue/基本使用相关.md)
-
 
 * [框架总结](框架总结/心得.md)
   * [心得](框架总结/心得.md)
