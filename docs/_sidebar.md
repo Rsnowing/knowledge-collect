@@ -9,6 +9,7 @@
     * [http与https](js/HTTP/http与https.md)
     * [http中的URL与URI](js/HTTP/http中的URL与URI.md)
     * [HTTP状态码](js/HTTP/HTTP状态码.md)
+    * [浏览器链接知多少](js/HTTP/浏览器链接知多少.md)
 
   * [JavaScript模块](js/JavaScript模块.md)
   * [jsonp](js/jsonp.md)
