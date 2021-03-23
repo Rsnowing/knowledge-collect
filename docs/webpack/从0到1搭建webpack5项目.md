@@ -3,13 +3,14 @@
 * 了解什么是webpack 为什么要使用webpack
 * 配置开发模式
 * 配置生产模式
+
 ## webpack4 与 webpack5 差别
 1. webpack-dev-server 命令变为 webpack-serve
 2. file-loader, raw-loader ， url-loader不是必须的了, 可以使用内置的assets module
-3. Node polyfills 不可用了, so if you get an error for stream, for example, you would add the stream-browserify package as a dependency and add { stream: 'stream-browserify' } to the alias property in your webpack config.
+...
 
 ## 什么是webpack
-一个现代化的web应用，已经不是单纯地优html、css、javascript组成的，它还需要对应用进行打包、压缩和编译成浏览器能够理解的代码，于是webpack就开始流行起来了。
+一个现代化的web应用，已经不是单纯地由html、css、javascript组成的，它还需要对应用进行打包、压缩和编译成浏览器能够理解的代码，于是webpack就开始流行起来了。
 
 webpack是一个模块打包器，它可以打包任何东西。你可以在开发时使用最新的Javascript特性或Typescirpt，webpack会将它编译成浏览器支持的代码并压缩它；你还可以在Javascript中导入需要用到的静态资源。
 
@@ -68,7 +69,7 @@ module.exports = {
 ```
 运行 ` npm run build `. 可以在命令行中看到打包的结果，并且在根目录下生成了一个dist目录，说明打包成功。
 
-### plugins
+### webpack plugin
 插件使webpack具备可扩展性，可以让我们支持更多的功能。
 
 #### 模板文件
@@ -136,7 +137,7 @@ module.exports = {
 }
 ```
 
-### Loader
+### webpack loader
 webpack使用loaders去解析模块，webpack想要去如何理解Javascript、静态资源（图片、字体、css）、转移Typescript和Babel，都需要配置相应的loader规则。
 
 接下来还需要做的事情：
@@ -237,7 +238,7 @@ module.exports = {
 ```
 
 ### HMR
-hot module replacement
+热更新
 
 ```shell
 npm i -D webpack-dev-server
@@ -273,10 +274,64 @@ module.exports =  {
   "start": "webpack serve"
 }
 ```
+运行 npm run start 修改代码时浏览器会自动刷新
 
-## 测试环境与生产环境配置分开
 
+## 关于webpack你应该要了解的问题
+
+### webpack 是什么 
+webpack 是一个用于现代 JavaScript 应用程序的静态模块打包工具。
+
+### webpack与rollup有什么区别
+* webpack对于`代码分割`和`静态资源`导入有着先天优势，并且支持热模块替换(HMR)，而rollup并不支持。 当项目中需要代码分割与静态资源时，首选webpack。
+* rollup对于代码的Tree-shaking和ES6模块有着算法优势上的支持，若你项目只需要打包出一个简单的bundle包，并是基于ES6模块开发的，可以考虑使用rollup。(webpack从2.0开始支持Tree-shaking，并在使用babel-loader的情况下支持了es6 module的打包了)
+* rollup API精简，上手简单， 目前许多库都是使用rollup来构建的，如React, Vue， Three.js, moment...
+
+一句话总结： 开发应用使用webpack，开发js库使用rollup
+
+### 有哪些常用的loader与plugin 有什么用处
+以上搭建应用时使用的。
+
+在脑子里想想他们的作用哈~
+
+loader: 
+* style-loader, css-loader, sass-loader, babel-loader, vue-loader...
+
+plugin:
+* clean-webpack-plugin, html-webpack-plugin, mini-css-extract-plugin...
+
+### webpack loader与plugin有什么区别
+* 相对于loader转换指定类型的模块功能，plugins能够被用于执行更广泛的任务比如打包优化、文件管理、环境注入等……
+* loader，它是一个转换器，将A文件进行编译成B文件，比如：将A.less转换为A.css，单纯的文件转换过程。
+* plugin是一个扩展器，它丰富了webpack本身，针对是loader结束后，webpack打包的整个过程，它并不直接操作文件，而是基于事件机制工作，会监听webpack打包过程中的某些节点，执行广泛的任务
+
+### 如何开发loader和plugin
+* [Writing a Loader | webpack](https://webpack.docschina.org/contribute/writing-a-loader/)
+* [Writing a Plugin | webpack](https://webpack.docschina.org/contribute/writing-a-plugin/)
+
+
+### bundle chunk module
+* [webpack 中那些最易混淆的 5 个知识点](https://juejin.cn/post/6844904007362674701)
+
+### 如何进行webpack打包优化
+* 使用webpack-bundle-analyzer分析哪些模块体积较大
+* 按需加载组件库
+* 使用mini-css-extract-plugin将css从打包后的js中分离出来
+* @babel/polyfill 按需加载
+* 将静态资源放在CDN上
+* splitChunks
+  将第三方库从主要的包中分离出来
+* 混淆代码
+  通过UglifyJS等工具来对js代码进行压缩，同时可以去掉不必要的空格、注释、console信息等，也可以有效的减小代码体积。
+
+其他优化：
+* 开启gzip压缩
+  开启gzip压缩可以减少HTTP传输的数据量和时间，从而减少客户端请求的响应时间，由于降低了请求时间，页面的加载速度也会得到提升，会有更快的渲染速度，极大地改善了用户体验
 
 
 ## 参考链接
 * [webpack Tutorial: How to Set Up webpack 5 From Scratch | Tania Rascia](https://www.taniarascia.com/how-to-use-webpack/)
+* [[译] 同中有异的 Webpack 与 Rollup](https://juejin.cn/post/6844903473700405261)
+* [第 148 题： webpack 中 loader 和 plugin 的区别是什么 · Issue #308 · Advanced-Frontend/Daily-Interview-Question · GitHub](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/308)
+* [重构之路：webpack打包体积优化（超详细）](https://juejin.cn/post/6844903781377785863#heading-8)
+* [Webpack打包优化](https://juejin.cn/post/6844903619158867982#heading-9)
