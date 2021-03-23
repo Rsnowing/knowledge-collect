@@ -15,6 +15,7 @@
   * [jsonp](js/jsonp.md)
   * [js中各种类型的判断](js/js中各种类型的判断.md)
   * [js常用的文件类型](js/js常用的文件类型.md)
+  * [js常见手写题](js/js常见手写题.md)
   * [Map](js/Map.md)
   * [post](js/post.md)
   * [postMessage](js/postMessage.md)
