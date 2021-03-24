@@ -1,5 +1,33 @@
 # vue3入门
-分享目的： 让大家对vue3有一个大致的了解
+
+## 为什么要有vue3?
+
+### vue2 遇到的难题
+* 随着功能的增长，复杂组件的代码变得难以维护。
+按逻辑归类【vue2中可以使用mixin】
+* vue2对于TS的支持非常有限
+
+## vue3的改变
+
+### 性能提升 【虚拟DOM重新实现 + tree shaking优化】
+* 打包大小减少41%
+* 初次渲染快55%，更新快133%
+* 内存使用减少54%
+
+### composition API 组合式API 💥
+* ref和reactive
+* computed 和 watch
+* 新的生命周期函数
+* 自定义函数 - Hooks函数
+
+### 其他新增特性
+* Teleport 瞬移组件的位置
+* Suspense 异步加载组件的福音
+* 全局API的优化和修改
+* 更多的实验性特性
+
+### 更好的TS支持
+
 ## vue3 周边生态
 ### 1. 开发四剑客
  vue cli 4.5.0, vue-router 4.0, vuex 4.0, vue devtool 已支持vue3

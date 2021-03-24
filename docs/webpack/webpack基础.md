@@ -18,8 +18,6 @@ webpack5中资源模块类型(asset module type)，通过添加 4 种新的模�
 > 资源内联（inline resource），就是将一个资源以内联的方式嵌入进另一个资源里面.
 #### 资源内联的意义
 
-
-
 ## loader
 loader 用于对模块的源代码进行转换。loader 可以使你在 import 或"加载"模块时预处理文件.
 

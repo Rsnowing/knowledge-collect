@@ -7,7 +7,6 @@
   * [CDN相关](js/CDN相关.md)
   * [HTTP](js/HTTP/http与https.md)
     * [http与https](js/HTTP/http与https.md)
-    * [http中的URL与URI](js/HTTP/http中的URL与URI.md)
     * [HTTP状态码](js/HTTP/HTTP状态码.md)
     * [浏览器链接知多少](js/HTTP/浏览器链接知多少.md)
 
@@ -68,7 +67,6 @@
   * [数据库](node/数据库.md)
   * [文件操作](node/文件操作.md)
   * [模块](node/模块.md)
-  * [模板引擎pug](node/模板引擎pug.md)
   * [网络操作](node/网络操作.md)
 
 * [React](React/Hook.md)
@@ -146,19 +144,12 @@
 
   * [随手记](vue2源码/随手记.md)
 
-* [vue3.0](vue3.0/一切的开始.md)
-  * [一切的开始](vue3.0/一切的开始.md)
-  * [代码段](vue3.0/代码段.md)
-  * [周会](vue3.0/周会.md)
-  * [源码解析](vue3.0/源码解析.md)
-  * [记录](vue3.0/记录.md)
-  * [配套设施](vue3.0/配套设施.md)
+* [vue3.0](vue3.0/vue3入门.md)
+  * [vue3入门](vue3.0/vue3入门.md)
 
-* [webpack](webpack/plugin与loader的区别.md)
-  * [plugin与loader的区别](webpack/plugin与loader的区别.md)
+* [webpack](webpack/require.context.md)
   * [require.context](webpack/require.context.md)
   * [webpack基础](webpack/webpack基础.md)
-  * [webpack插件](webpack/webpack插件.md)
   * [从0到1搭建webpack5项目](webpack/从0到1搭建webpack5项目.md)
 
 * [天地一沙鸥-collect](天地一沙鸥-collect/blog.md)
@@ -171,7 +162,6 @@
   * [charles安装及使用](好风凭借力-工具/charles安装及使用.md)
   * [chrome调试技巧](好风凭借力-工具/chrome调试技巧.md)
   * [docsify](好风凭借力-工具/docsify.md)
-  * [git-commit规范](好风凭借力-工具/git-commit规范.md)
   * [JSDOC](好风凭借力-工具/JSDOC.md)
   * [lerna](好风凭借力-工具/lerna.md)
   * [lint-tool](好风凭借力-工具/lint-tool.md)
@@ -181,12 +171,10 @@
 
   * [rollup](好风凭借力-工具/rollup.md)
   * [sentry](好风凭借力-工具/sentry.md)
-  * [vscode工具](好风凭借力-工具/vscode工具/vscode.md)
-    * [vscode](好风凭借力-工具/vscode工具/vscode.md)
+  * [vscode工具](好风凭借力-工具/vscode工具/vscode自定义代码片段.md)
     * [vscode自定义代码片段](好风凭借力-工具/vscode工具/vscode自定义代码片段.md)
     * [发布vscode插件](好风凭借力-工具/vscode工具/发布vscode插件.md)
 
-  * [一些好玩的网站收集](好风凭借力-工具/一些好玩的网站收集.md)
   * [如何学好英语](好风凭借力-工具/如何学好英语.md)
   * [工具网站收藏](好风凭借力-工具/工具网站收藏.md)
   * [微信公众号开发技巧](好风凭借力-工具/微信公众号开发技巧.md)
@@ -219,7 +207,6 @@
 
 * [翻译](翻译/async-await陷阱.md)
   * [async-await陷阱](翻译/async-await陷阱.md)
-  * [你并不需要vscode插件](翻译/你并不需要vscode插件.md)
 
 * [自动化测试](自动化测试/elementui自动化测试调研-mocha.md)
   * [elementui自动化测试调研-mocha](自动化测试/elementui自动化测试调研-mocha.md)

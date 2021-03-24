@@ -141,11 +141,3 @@ progress
 > [ts命令](https://www.typescriptlang.org/docs/handbook/compiler-options.html)
 
 
-
-
-
-```js
-
-
-```
-
