@@ -111,6 +111,7 @@
   * [router](vue/router.md)
   * [v-model](vue/v-model.md)
   * [vue-code](vue/vue-code.md)
+  * [vue3入门](vue/vue3入门.md)
   * [组件传值方式总结](vue/组件传值方式总结.md)
   * [组件缓存](vue/组件缓存.md)
 
@@ -143,9 +144,6 @@
     * [1.生命周期](vue2源码/组件化/1.生命周期.md)
 
   * [随手记](vue2源码/随手记.md)
-
-* [vue3.0](vue3.0/vue3入门.md)
-  * [vue3入门](vue3.0/vue3入门.md)
 
 * [webpack](webpack/require.context.md)
   * [require.context](webpack/require.context.md)
@@ -201,6 +199,7 @@
   * [object-fit](红红绿绿苑中花/object-fit.md)
   * [position定位方式](红红绿绿苑中花/position定位方式.md)
   * [vw和vh](红红绿绿苑中花/vw和vh.md)
+  * [使用CSS提高页面渲染速度](红红绿绿苑中花/使用CSS提高页面渲染速度.md)
   * [垂直居中方案](红红绿绿苑中花/垂直居中方案.md)
   * [最后的元素](红红绿绿苑中花/最后的元素.md)
   * [起名](红红绿绿苑中花/起名.md)
