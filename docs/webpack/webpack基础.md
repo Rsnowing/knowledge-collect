@@ -70,7 +70,22 @@ loader。在最后一个 loader，返回 webpack 所预期的 JavaScript。
 * 插件(plugin)可以为 loader 带来更多特性。
 * loader 能够产生额外的任意文件。
 
-## Hot Module Replacement 热更新 HMR
+
+### 配置
+```js
+resolve: {
+  alias: {
+    "@": path.resolve(__dirname, "./src/style"),
+  },
+  modules: [path.resolve(__dirname, "./node_modules")],
+  extensions: [".js", ".json", ".jsx", ".vue"], //后缀列表 希望大家不要省略后缀，因为会浪费查询时间。
+},
+
+// tree-shaking 在生产模式下会生效,开发模式下打包出来的代码会提示*** used
+optimization: {
+  usedExports: true,
+},
+```
 
 
 ## 参考链接
